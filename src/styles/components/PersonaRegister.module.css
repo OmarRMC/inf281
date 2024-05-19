@@ -1,0 +1,34 @@
+
+.estado{
+    text-align: center;
+}
+.estado > span {
+    margin:3px ; 
+    color: white ; 
+    padding: 2px 5px ;
+    border-radius: 5px;
+
+}
+.valido{
+    background: var(--color-valido);
+}
+.invalido{
+    background: var(--color-invalido);
+}
+
+.container{
+    width: 100%;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+
+.validar input:invalid{
+    border-bottom: 2px solid var(--color-invalido) ;
+}
+
+.validar input:valid{
+    border-bottom: 2px solid var(--color-valido) ;
+}

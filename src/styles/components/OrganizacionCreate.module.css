@@ -1,0 +1,16 @@
+.container{
+    width: 100%;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+.validar input:invalid{
+    border-bottom: 2px solid var(--color-invalido) ;
+}
+
+.validar input:valid{
+    border-bottom: 2px solid var(--color-valido) ;
+}

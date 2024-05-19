@@ -1,0 +1,42 @@
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    padding: 20px 40px ;
+    max-width: 900px;
+}
+.about{
+    position: relative;
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+   max-width: 900px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.team img {
+    object-fit: cover;
+    max-width: 400px; 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+    filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.3));
+}
+.team img:hover{
+    transform: perspective(500px) rotateX(15deg); /* Aplicar perspectiva y rotación en el eje X */
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.5));
+}
+.historia{
+ background: var(--color-secundario);
+ color: white ;  
+}
+
+.itemValores{
+    background: rgb(224, 224, 224) ;    
+    gap:10px; 
+    border-radius: 5px;
+}
+
