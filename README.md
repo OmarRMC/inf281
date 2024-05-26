@@ -5,3 +5,7 @@ Proyecto de sistema de donacion para INF 281
 - vite
 - React
 
+  #Para ejecutar
+  - yarn
+  - yarun run dev
+
